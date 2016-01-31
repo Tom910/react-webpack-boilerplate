@@ -1,0 +1,23 @@
+.wrapp {
+  display: flex;
+  justify-content: center;
+}
+.lists {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list {
+}
+.list:not(:last-of-type) {
+  margin-right: 27px;
+}
+.link {
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.linkActive {
+  color: #D2D2D2;
+}

@@ -1,0 +1,6 @@
+{
+  "preset": "airbnb",
+  "excludeFiles": ["node_modules/**"],
+  "validateQuoteMarks": { "mark": "'", "escape": true, "ignoreJSX": true },
+  "requireTrailingComma": false
+}

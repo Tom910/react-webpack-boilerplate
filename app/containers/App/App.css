@@ -1,0 +1,12 @@
+body {
+  font-family: Verdana,Geneva,sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.wrapp {
+  display: flex;
+  flex-flow: row wrap;
+}
