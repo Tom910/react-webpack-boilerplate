@@ -12,7 +12,7 @@ const common = {
   ],
   output: {
     path: path.join(__dirname, '../dist/'), // path outh
-    filename: '[name].js', // name main file
+    filename: '[name]-[chunkhash].js', // name main file
     chunkFilename: '[name]-[chunkhash].js', // name chunk file
     publicPath: '/', // resolve url path
   },
