@@ -4,19 +4,30 @@ import { syncHistory } from 'react-router-redux';
 import reducer from '../reducers';
 
 const middleware = syncHistory(history);
+const initialState = {};
 
-let finalCreateStore;
+let store;
+
+// Enable DevTools for Redux
 if (__DEV__) {
   const DevTools = require('../containers/DevTools/DevTools').default;
-  finalCreateStore = compose(
-    applyMiddleware(middleware),
-    DevTools.instrument()
-  )(createStore);
+  store = createStore(
+    reducer,
+    initialState,
+    compose(
+      applyMiddleware(middleware),
+      DevTools.instrument()
+    ),
+  );
 } else {
-  finalCreateStore = applyMiddleware(middleware)(createStore);
+  // Product
+  store = createStore(
+    reducer,
+    initialState,
+    applyMiddleware(middleware),
+  );
 }
 
-const store = finalCreateStore(reducer);
 middleware.listenForReplays(store);
 
 export default store;
