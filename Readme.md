@@ -6,15 +6,16 @@ Boilerplate for modern web application
 
 - [x] [Webpack](https://webpack.github.io)
 - [x] [React](https://facebook.github.io/react/)
-- [x] [react-transform-hmr](https://github.com/gaearon/react-transform-hmr)
+- [x] [React Transform HMR](https://github.com/gaearon/react-transform-hmr)
 - [x] [Redux](https://github.com/rackt/redux)
+- [x] [React Router Redux](https://github.com/rackt/react-router-redux)
 - [x] [Babel](https://babeljs.io/)
 - [x] [Autoprefixer](https://github.com/postcss/autoprefixer)
 - [x] [PostCSS](https://github.com/postcss/postcss)
 - [x] [CSS modules](https://github.com/outpunk/postcss-modules)
 - [x] [cssnext](https://github.com/MoOx/postcss-cssnext)
 - [x] [cssnano](https://github.com/ben-eb/cssnano)
-- [x] [react-router-redux](https://github.com/rackt/react-router-redux)
+
 
 
 ### Directory Layout
@@ -30,7 +31,7 @@ Boilerplate for modern web application
 │   ├── /containers/            # React page
 │   ├── /reducers/              # Redux reducers
 │   ├── /store/                 # Stores contain the application state and logic
-│   ├── /utils/                 # Devtools and history settings
+│   ├── /utils/                 # DevTools and history settings
 │   ├── /index.js               # Entry point scripts
 │   ├── /menu.js                # Menu application
 │   ├── /routes.js              # Application routes
@@ -42,6 +43,7 @@ Boilerplate for modern web application
 │   ├── /server.babel.js        # Babel transpiler for node.js
 ├── /static/                    # Static content (plain html, manifest.json, images)
 │── package.json                # The list of 3rd party libraries and utilities
+│── .eslintrc                   # ESLint config
 ```
 
 ## Getting started
@@ -64,8 +66,8 @@ Run `npm run profiler`, which will compile all the necessary files a `stats.json
 
 ## TODO
 
-- [ ] react-helmet
 - [ ] normal test app
+- [ ] react-helmet
 - [ ] ServiceWorker
 - [ ] Unit Test
 - [ ] FontFaceObserver
